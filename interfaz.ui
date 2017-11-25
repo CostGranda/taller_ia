@@ -1,0 +1,160 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface>
+  <object class="ttk.Frame" id="Frame_1">
+    <property name="height">200</property>
+    <property name="width">200</property>
+    <layout>
+      <property name="column">0</property>
+      <property name="propagate">True</property>
+      <property name="row">0</property>
+    </layout>
+    <child>
+      <object class="ttk.Frame" id="Frame_5">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">0</property>
+        </layout>
+        <child>
+          <object class="ttk.Label" id="lblTitle">
+            <property name="font">{TkDefaultFont bold} 12 {}</property>
+            <property name="takefocus">true</property>
+            <property name="text" translatable="yes">Algoritmo Genético OneMax</property>
+            <property name="underline">0</property>
+            <property name="width">0</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="Frame_6">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">2</property>
+            </layout>
+            <child>
+              <object class="tk.Text" id="txtOutput">
+                <property name="cursor">bogosity</property>
+                <property name="exportselection">false</property>
+                <property name="font">TkTextFont</property>
+                <property name="height">8</property>
+                <property name="insertofftime">0</property>
+                <property name="maxundo">0</property>
+                <property name="width">46</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="lbl2">
+            <property name="compound">bottom</property>
+            <property name="text" translatable="yes">Resultados:</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">1</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="Frame_8">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="propagate">True</property>
+              <property name="row">3</property>
+            </layout>
+            <child>
+              <object class="tk.Text" id="txtIndi">
+                <property name="borderwidth">1</property>
+                <property name="exportselection">true</property>
+                <property name="font">TkTextFont</property>
+                <property name="height">1</property>
+                <property name="insertontime">100</property>
+                <property name="insertwidth">0</property>
+                <property name="maxundo">0</property>
+                <property name="relief">raised</property>
+                <property name="selectborderwidth">0</property>
+                <property name="setgrid">false</property>
+                <property name="takefocus">false</property>
+                <property name="undo">true</property>
+                <property name="width">45</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="ipadx">2</property>
+                  <property name="propagate">True</property>
+                  <property name="row">1</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Label" id="Label_4">
+                <property name="text" translatable="yes">Mejor Individuo:</property>
+                <property name="width">0</property>
+                <layout>
+                  <property name="column">0</property>
+                  <property name="propagate">True</property>
+                  <property name="row">0</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="Frame_7">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout>
+          <property name="column">0</property>
+          <property name="propagate">True</property>
+          <property name="row">1</property>
+        </layout>
+        <child>
+          <object class="ttk.Button" id="btnStart">
+            <property name="text" translatable="yes">Iniciar</property>
+            <layout>
+              <property name="column">0</property>
+              <property name="padx">30</property>
+              <property name="pady">5</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="btnSalir">
+            <property name="command">on_quit_button</property>
+            <property name="compound">top</property>
+            <property name="cursor">based_arrow_down</property>
+            <property name="text" translatable="yes">Salir</property>
+            <layout>
+              <property name="column">1</property>
+              <property name="columnspan">1</property>
+              <property name="padx">30</property>
+              <property name="pady">5</property>
+              <property name="propagate">True</property>
+              <property name="row">0</property>
+              <property name="rowspan">8</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>

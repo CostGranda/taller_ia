@@ -23,7 +23,7 @@ toolbox.register("attr_bool", random.randint, 0, 1)
 # Inicializadores
 
 # En este caso queremos que el mejor individuo contenga 20 uno (1)s
-toolbox.register("individuo", tools.initRepeat, creator.Individuo, toolbox.attr_bool, 20)
+toolbox.register("individuo", tools.initRepeat, creator.Individuo, toolbox.attr_bool, 30)
 # La población se rellena de listas de individuos
 toolbox.register("poblacion", tools.initRepeat, list, toolbox.individuo)
 
@@ -60,15 +60,15 @@ def main():
     # Las stadisticas que queremos mostrar (stats)
     # Retorna una tupla con el log, y la población final
     poblacion, log = algorithms.eaSimple(poblacion, toolbox, cxpb=0.5, mutpb=0.2, ngen=5,
-                                   stats=stats, halloffame=hof, verbose=True)
-
+                                   stats=stats, halloffame=hof, verbose=False)
+    print(log)
     print("\n==== Fin de la evolución")
     # Selecciona El mejor individuo
     mejores_ind = tools.selBest(poblacion, 1)[0]
     print('\nMejor Individuo:\n', mejores_ind)
     print('\nNúmero de Unos:', sum(mejores_ind))
+    #return poblacion, log, hof
 
-    return poblacion, log, hof
 
 if __name__ == "__main__":
     main()
